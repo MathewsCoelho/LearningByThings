@@ -1,0 +1,64 @@
+
+@font-face
+{
+    font-family: 'Museo700';
+    src: url('../fonts/Museo700Regular.eot');
+    src: url('../fonts/Museo700Regular.eot') format('embedded-opentype'),
+    url('../fonts/Museo700Regular.woff2') format('woff2'),
+    url('../fonts/Museo700Regular.woff') format('woff'),
+    url('../fonts/Museo700Regular.ttf') format('truetype'),
+    url('../fonts/Museo700Regular.svg#Museo700') format('svg');
+}
+
+$fonte-geral: 'Titillium Web', sans-serif;
+$fonte-principal: 'Museo700';
+
+@import 'sprite';
+@import 'colors';
+
+@include sprites($spritesheet-sprites);
+
+/* Estilos genéricos */
+*
+{
+    box-sizing: border-box;
+}
+
+header,
+body, 
+figure
+{
+    margin: 0;
+    padding: 0;
+}
+
+.no-gutters
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+.row.no-gutters > [class^='col-'],
+.row.no-gutters > [class*=' col-']
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.icon
+{
+    display: block;
+}
+
+.icon-inline
+{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+@import 'responsive';
